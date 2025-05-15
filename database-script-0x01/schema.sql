@@ -89,3 +89,8 @@ Message
 
 - We will not be changing any structure because for tables with  composite key, the non-key elements in them fully depend on the composite key.
 - In short, there is no `partial dependency`
+
+**3rd normal form**
+- The table can be said to be in 3rdNF because the tables with composite keys do not have trasnsitive dependency
+- `Transitive dependency` is where an entry in a table is dependent  on another entry which now depends on the primary key
+- The best way to combat this is to take the two related items that depend on each  other and put them in the same database and give an primary ID that will be used as a foreign key for the former DB 
