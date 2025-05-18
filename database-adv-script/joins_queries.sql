@@ -41,7 +41,8 @@ r.comment,
 r.user_id
 FROM "Property" AS p
 LEFT JOIN review AS r
-ON p.property_id = r.property_id;
+ON p.property_id = r.property_id
+ORDER BY r.rating ASC;
 
 
 -- FULL OUTER JOIN between Users and Bookings
